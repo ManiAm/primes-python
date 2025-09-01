@@ -1,0 +1,9 @@
+services:
+
+  primes-python:
+    build: .
+    container_name: primes-python
+    hostname: primes-python
+    restart: unless-stopped
+    stdin_open: true
+    tty: true

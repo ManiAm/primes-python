@@ -1,0 +1,6 @@
+reports/
+coverage/
+__pycache__
+test-results/
+dist/
+*.egg-info/

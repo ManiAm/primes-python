@@ -1,0 +1,26 @@
+
+# Target Python version
+target-version = "py310"
+
+# Restrict linting/formatting scope
+src = ["src", "tests"]
+
+# Max line length
+line-length = 100
+
+[lint]
+# Rule families to enable
+#  E = pycodestyle errors
+#  F = pyflakes
+#  I = import sorting
+#  UP = pyupgrade (modern Python syntax)
+select = ["E", "F", "I", "UP"]
+
+# Rules to ignore globally
+ignore = [
+    "E501",  # line too long (Black handles wrapping)
+]
+
+[lint.per-file-ignores]
+# Allow asserts in test files
+"tests/*" = ["S101"]
